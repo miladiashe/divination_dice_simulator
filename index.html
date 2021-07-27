@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+    <header>
+        <h1>
+            아스트롤로지 다이스 시뮬레이터
+        </h1>
+    </header>
+    <script>
+        function Roll() {
+
+        return Math.floor(Math.random()*12) +1;
+
+        }
+
+        
+
+        function Planet(a){
+            result = Roll() 
+            
+            if (result === 1){
+                sign = '☉';
+            }
+            else{
+                sign = 'h';
+            }
+            document.getElementById(a).innerHTML = sign;
+        }
+    </script>
+    <article>
+        <button onclick="Planet('p')">주사위 굴리기</button>
+        
+        <div>
+            <div id='p'></div>
+            <h2>행성</h2>
+        </div>
+        <div>
+            <div id='cons'></div>
+            <h2>별자리</h2>
+        </div>
+        <div>
+            <div id='house'></div>
+            <h2>하우스</h2>
+        </div>
+    </article>
+</body>
