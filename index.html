@@ -58,21 +58,74 @@
             }
             document.getElementById(a).innerHTML = sign;
         }
+        function Stella(a){
+            result = Roll() 
+            
+            if (result === 1){
+                sign = '♈';
+            }
+            else if(result === 2){
+                sign = '♉';
+            }
+            else if(result === 3){
+                sign = '♊';
+            }
+            else if(result === 4){
+                sign = '♋';
+            }
+            else if(result === 5){
+                sign = '♌';
+            }
+            else if(result === 6){
+                sign = '♍';
+            }
+            else if(result === 7){
+                sign = '♎';
+            }
+            else if(result === 8){
+                sign = '♏';
+            }
+            else if(result === 9){
+                sign = '♏';
+            }
+            else if(result === 10){
+                sign = '♑';
+            }
+            else if(result === 11){
+                sign = '♒';
+            }
+            else{
+                sign = '♓';
+            }
+            document.getElementById(a).innerHTML = sign;
+        }
+
+        function House(a){
+            result = Roll() 
+            document.getElementById(a).innerHTML = result;
+        }
+
+        function allroll(a, b, c){
+            Planet(a);
+            Stella(b);
+            House(c);
+        }
     </script>
     <article>
-        <button onclick="Planet('p')">주사위 굴리기</button>
-        
+        <button onclick="allroll('p', 'cons', 'house')">주사위 굴리기</button>
         <div>
-            <div id='p'></div>
-            <h2>행성</h2>
-        </div>
-        <div>
-            <div id='cons'></div>
-            <h2>별자리</h2>
-        </div>
-        <div>
-            <div id='house'></div>
-            <h2>하우스</h2>
+            <div>
+                <div id='p'></div>
+                <h2>행성</h2>
+            </div>
+            <div>
+                <div id='cons'></div>
+                <h2>별자리</h2>
+            </div>
+            <div>
+                <div id='house'></div>
+                <h2>하우스</h2>
+            </div>
         </div>
     </article>
 </body>
