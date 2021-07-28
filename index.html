@@ -1,6 +1,9 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-
+    <meta charset="UTF-8">
+    <title>아스트롤로지 다이스 시뮬레이터</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
@@ -112,20 +115,21 @@
         }
     </script>
     <article>
-        <button onclick="allroll('p', 'cons', 'house')">주사위 굴리기</button>
-        <div>
+        <button id='roll_button' onclick="allroll('p', 'cons', 'house')">주사위 굴리기</button>
+        <div id='full_box'>
             <div class = 'onedice'>
                 <div id='p' class='icon'></div>
-                <h2>행성</h2>
+                <p>행성</p>
             </div>
             <div  class = 'onedice'>
                 <div id='cons' class='icon'></div>
-                <h2>별자리</h2>
+                <p>별자리</p>
             </div>
             <div  class = 'onedice'>
                 <div id='house' class='icon'></div>
-                <h2>하우스</h2>
+                <p>하우스</p>
             </div>
         </div>
     </article>
 </body>
+</html>
