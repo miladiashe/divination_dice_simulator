@@ -10,3 +10,9 @@ header{
     padding: 2%;
 }
 
+.icon{
+    display: inline-block;
+    border:black 2px solid;
+    padding: 5%;
+}
+
