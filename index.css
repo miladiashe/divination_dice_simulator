@@ -2,4 +2,11 @@
 
 html{
     font-family: 'DungGeunMo', serif;
+    margin: 0;
+    background-color: aquamarine;
+    text-align: center;
 }
+header{
+    padding: 2%;
+}
+
